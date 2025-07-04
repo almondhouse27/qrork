@@ -1,0 +1,69 @@
+<form method="POST" action="{{ url_for('index') }}">
+
+    <div class="set">
+        <fieldset>
+            <legend>URL</legend>
+            <input type="text" id="url" name="url" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>File Name</legend>
+            <input type="text" id="filename" name="filename" required>
+        </fieldset>
+    </div>
+
+    <div class="set">
+        <fieldset>
+            <legend>File Format</legend>
+            <label>
+                <input type="radio" name="format" value="png" checked>
+                .png
+            </label>
+            <label>
+                <input type="radio" name="format" value="bmp" checked>
+                .bmp
+            </label>
+            <label>
+                <input type="radio" name="format" value="jpg">
+                .jpg
+            </label>
+            <label>
+                <input type="radio" name="format" value="gif">
+                .gif
+            </label>
+            <label>
+                <input type="radio" name="format" value="svg">
+                .svg
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Theme</legend>
+            <label>
+                <input type="radio" name="theme" value="default" checked>
+                Default
+            </label>
+            <label>
+                <input type="radio" name="theme" value="invert">
+                Invert
+            </label>
+            <label>
+                <input type="radio" name="theme" value="qrork">
+                QRORK
+            </label>
+            <label>
+                <input type="radio" name="theme" value="krorq">
+                KRORQ
+            </label>
+        </fieldset>
+    </div>
+
+
+    <div class="btn">
+        <button type="submit">Generate</button>
+        <div class="footer">{% include 'partials/footer.html' %}</div>
+    </div>
+    
+
+</form>
+

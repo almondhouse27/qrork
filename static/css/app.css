@@ -1,0 +1,133 @@
+body, html {
+    font-family: monospace;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    align-items: center;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.frame {
+    background-color: #171717;
+    border: 1px solid #0FFF50;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    color: #FF9F0F;
+    padding: 16px 32px;
+    max-width: 800px;
+    width: 80%;
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.header i {
+    margin-right: 16px;
+}
+
+form {
+    margin: 0 24px;
+}
+
+.set {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+}
+
+.set fieldset {
+    flex: 1 1 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.set input[type="text"] {
+    background-color: #373737;
+    box-sizing: border-box;
+    color: #0FFF50;
+    width: 100%;
+}
+
+fieldset {
+    background-color: #070707;
+    border: 1px solid #0FFF50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin: 16px 0;
+    padding: 16px;
+}
+
+.btn {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn button {
+    background-color: #FF9F0F;
+    border: none;
+    border-radius: 8px;
+    color: #171717;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: monospace;
+    margin: 32px 0;
+    padding: 8px 16px;
+    width: 200px;
+}
+
+.btn button:hover {
+    background-color: #FFB84D;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.footer a {
+    color: #FF9F0F;
+    text-align: right;
+    margin: 0 8px;
+}
+
+.footer a:hover {
+    color: #FFB84D;
+}
+
+
+@media (max-width: 950px) {
+    .frame {
+        padding: 8px 16px;
+        width: 85%;
+    }
+    form {
+        margin: 0 16px;
+    }
+    .set {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .set fieldset {
+        width: 100%;
+    }
+    fieldset {
+        margin: 8px 0;
+    }
+}

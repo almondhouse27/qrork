@@ -7,7 +7,10 @@ body, html {
 
 .main {
     align-items: center;
-    background-color: #272727;
+    background: url("../pattern.jpg") repeat, 
+                linear-gradient(225deg, #ff9f0fbc 0%, #ff0f0fce 100%);
+    background-size: auto, cover;
+    background-blend-mode: overlay;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -15,11 +18,12 @@ body, html {
 }
 
 .frame {
-    background-color: #171717;
-    border: 1px solid #0FFF50;
+    background-color: #202020;
+    /* border: 1px solid #0FFF50; */
+    border: 1px solid #fd2727;
     border-radius: 32px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    color: #FF9F0F;
+    color: #FFEB0F;
     padding: 16px 32px;
     max-width: 800px;
     width: 80%;
@@ -29,12 +33,17 @@ body, html {
     align-items: center;
     display: flex;
     flex-direction: row;
-    font-size: 18px;
+    font-size: 24px;
     justify-content: center;
 }
 
 .header i {
     margin-right: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.header h1 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 form {
@@ -57,18 +66,39 @@ form {
 .set input[type="text"] {
     background-color: #373737;
     box-sizing: border-box;
-    color: #0FFF50;
+    color: #FFEB0F;
     width: 100%;
+}
+
+.set input[type="text"]:focus {
+    outline: none;
+    border: 1px solid #fd2727;
+    box-shadow: 0 0 4px #fd2727;
 }
 
 fieldset {
     background-color: #070707;
-    border: 1px solid #0FFF50;
+    /* border: 1px solid #0FFF50; */
+    border: 1px solid #fd2727;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: space-between;
     margin: 16px 0;
     padding: 16px;
 }
+
+fieldset label {
+    flex: 1 1 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .btn {
     align-items: center;
@@ -78,7 +108,7 @@ fieldset {
 }
 
 .btn button {
-    background-color: #FF9F0F;
+    background-color: #FFEB0F;
     border: none;
     border-radius: 8px;
     color: #171717;
@@ -91,8 +121,16 @@ fieldset {
 }
 
 .btn button:hover {
-    background-color: #FFB84D;
-    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+    background-color: #ffeb0fce;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.btn button:disabled {
+    background-color: #373737;
+    color: #202020;
+    cursor: not-allowed;
+    opacity: 0.6;
+    box-shadow: none;
 }
 
 .footer {
@@ -102,13 +140,37 @@ fieldset {
 }
 
 .footer a {
-    color: #FF9F0F;
+    color: #FFEB0F;
     text-align: right;
-    margin: 0 8px;
+    margin: 0 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
 .footer a:hover {
-    color: #FFB84D;
+    color: #ffeb0fce; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}
+
+fieldset label input:disabled + span,
+fieldset label input:disabled {
+    opacity: 0.5;
+    color: #888;
+    cursor: not-allowed;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px #373737 inset !important;
+    -webkit-text-fill-color: #FFEB0F !important;
+    caret-color: #FFEB0F;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-internal-autofill-selected { /* for Firefox (less reliable) */
+    background-color: #373737 !important;
+    color: #FFEB0F !important;
 }
 
 

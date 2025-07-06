@@ -8,7 +8,7 @@
 
         <fieldset>
             <legend>File Name</legend>
-            <input type="text" id="filename" name="filename" required>
+            <input type="text" id="file_name" name="file_name" required>
         </fieldset>
     </div>
 
@@ -16,44 +16,49 @@
         <fieldset>
             <legend>File Format</legend>
             <label>
-                <input type="radio" name="format" value="png" checked>
+                <input type="radio" name="file_format" value="png" checked>
                 .png
             </label>
             <label>
-                <input type="radio" name="format" value="bmp" checked>
+                <input type="radio" name="file_format" value="bmp">
                 .bmp
             </label>
             <label>
-                <input type="radio" name="format" value="jpg">
+                <input type="radio" name="file_format" value="jpg">
                 .jpg
             </label>
             <label>
-                <input type="radio" name="format" value="gif">
+                <input type="radio" name="file_format" value="gif">
                 .gif
             </label>
             <label>
-                <input type="radio" name="format" value="svg">
+                <input type="radio" name="file_format" value="svg">
                 .svg
             </label>
         </fieldset>
-
+        
         <fieldset>
             <legend>Theme</legend>
             <label>
                 <input type="radio" name="theme" value="default" checked>
-                Default
+                Base
             </label>
             <label>
                 <input type="radio" name="theme" value="invert">
-                Invert
+                <span>Flip</span>
             </label>
             <label>
                 <input type="radio" name="theme" value="qrork">
-                QRORK
+                <span>QRork</span>
             </label>
             <label>
-                <input type="radio" name="theme" value="krorq">
-                KRORQ
+                <input type="radio" name="theme" value="bee">
+                <span>Bee</span>
+            </label>
+
+            <label>
+                <input type="radio" name="theme" value="aqua">
+                <span>Aqua</span>
             </label>
         </fieldset>
     </div>

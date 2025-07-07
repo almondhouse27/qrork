@@ -37,7 +37,7 @@ source .venv/bin/activate
 **Install package dependencies**
 
 ```shell
-pip install -r .install/requirements.txt
+pip install -r requirements.txt
 ```
 
 **Launch web application**

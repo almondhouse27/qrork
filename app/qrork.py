@@ -1,7 +1,17 @@
-from turtle import back
 import qrcode
 import qrcode.image.svg
 from io import BytesIO
+
+
+import logging
+logging.basicConfig(
+    level=logging.INFO,
+    filename="app.log",
+    filemode="a",
+    format="%(asctime)s %(levelname)s %(name)s: %(message)s"
+)
+log = logging.getLogger(__name__)
+
 
 def generate(url, file_name, file_format, theme):
 
@@ -12,14 +22,17 @@ def generate(url, file_name, file_format, theme):
         from the `app.py` file's index ('/') function when the form is submitted ['POST'].
 
     Args:
-        url             (str):    The data or URL to encode in the QR code.
-        file_name       (str):    The base name for the output file.
-        file_format     (str):    The desired image file format.
-        theme           (str):    The color theme to use for the QR code.
+        url             (str):       The data or URL to encode in the QR code.
+        file_name       (str):       The base name for the output file.
+        file_format     (str):       The desired image file format.
+        theme           (str):       The color theme to use for the QR code.
 
     Returns:
-        success         (str):    The file name of the saved QR code image.
-        otherwise       (None)
+        buf             (BytesIO):   In-memory file object containing the QR code image.
+        file            (str):       The file name of the QR code image.
+        ext             (str):       The file extension/format.
+        
+        If an error occurs, returns (None, None, None).
 
     Calls:
         assign_theme(theme):                     Determines the fill and background colors based on the selected theme.
@@ -57,7 +70,7 @@ def generate(url, file_name, file_format, theme):
         return buf, file, ext
     
     except Exception as e:
-        print(f"Error generating QR code: {e}")
+        log.error(f"Error generating QR code: {e}", exc_info=True)
         return None, None, None
 
 

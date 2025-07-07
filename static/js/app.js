@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+// URL and file name input validation --------------------------- //
     const urlInput = document.getElementById("url");
     const fileInput = document.getElementById("file_name") || document.getElementById("filename");
     const button = document.querySelector(".btn button");
@@ -34,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fileInput.addEventListener("input", validate);
 
+
+
+// Button enable/disable logic --------------------------- //
     function isValidUrl(url) {
         if (url === prefix) return false;
         try {
@@ -50,6 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
         button.disabled = !(isValidUrl(url) && file);
     }
 
+
+
+// Radio button watcher --------------------------- //
     const fileFormatRadios = document.querySelectorAll('input[name="file_format"]');
     const themeRadios = document.querySelectorAll('input[name="theme"]');
     const defaultTheme = document.querySelector('input[name="theme"][value="default"]');
@@ -77,4 +85,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     updateThemeRadios();
+
+
+
+// Modal help logic --------------------------- //
+    const helpBtn = document.querySelector('.fa-question');
+    const modal = document.getElementById('help-modal');
+    const closeBtn = document.getElementById('close-help');
+
+    if (helpBtn && modal && closeBtn) {
+        helpBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        });
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
 });

@@ -1,9 +1,12 @@
 from flask import Flask, render_template, request, url_for, send_file, flash
 from app.qrork import generate
+import os
 
 
 app = Flask(__name__)
-app.secret_key = 'fiasco'
+app.secret_key = os.environ.get('SECRET_KEY', 'fallback-key')
+app.config['SESSION_COOKIE_SECURE'] = True
+app.config['SESSION_COOKIE_HTTPONLY'] = True
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -37,4 +40,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5005)
+    app.run(debug=False, port=5005)

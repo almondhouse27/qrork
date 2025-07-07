@@ -1,15 +1,20 @@
-body, html {
+html, body {
     font-family: monospace;
     height: 100%;
     margin: 0;
     padding: 0;
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE10+/Edge */
+    user-select: none;         /* Standard */
 }
 
 .main {
     align-items: center;
     background: url("../pattern.jpg") repeat, 
-                linear-gradient(225deg, #ff9f0fbc 0%, #ff0f0fce 100%);
-    background-size: auto, cover;
+    linear-gradient(225deg, #ff9f0fbc 0%, #ff0f0fce 100%);
+    background-size: 2160px auto, cover;
     background-blend-mode: overlay;
     display: flex;
     flex-direction: column;
@@ -98,8 +103,6 @@ fieldset label {
     justify-content: center;
 }
 
-
-
 .btn {
     align-items: center;
     display: flex;
@@ -173,6 +176,43 @@ input:-internal-autofill-selected { /* for Firefox (less reliable) */
     color: #FFEB0F !important;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #171717;
+    color: #FFEB0F;
+    border: 2px solid #fd2727;
+    border-radius: 12px;
+    padding: 48px 36px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.7);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    color: #fd2727;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #FFEB0F;
+}
+
 
 @media (max-width: 950px) {
     .frame {
@@ -191,5 +231,8 @@ input:-internal-autofill-selected { /* for Firefox (less reliable) */
     }
     fieldset {
         margin: 8px 0;
+    }
+    .footer a {
+        margin: 0 8px;
     }
 }

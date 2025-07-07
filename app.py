@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, url_for, send_file, flash
-from app.qrork import generate
+from src.qrork import generate
 import os
 
 

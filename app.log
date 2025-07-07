@@ -1,0 +1,79 @@
+2025-07-06 22:31:33,324 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-07-06 22:31:33,324 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-07-06 22:34:35,880 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-07-06 22:34:35,881 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-07-06 22:34:35,881 INFO werkzeug:  * Restarting with stat
+2025-07-06 22:34:36,155 WARNING werkzeug:  * Debugger is active!
+2025-07-06 22:34:36,158 INFO werkzeug:  * Debugger PIN: 103-261-880
+2025-07-06 22:38:01,434 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-07-06 22:38:01,434 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-07-06 22:38:01,434 INFO werkzeug:  * Restarting with stat
+2025-07-06 22:38:01,700 WARNING werkzeug:  * Debugger is active!
+2025-07-06 22:38:01,703 INFO werkzeug:  * Debugger PIN: 103-261-880
+2025-07-06 22:44:34,329 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:44:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 22:51:33,872 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-07-06 22:51:33,872 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-07-06 22:51:33,873 INFO werkzeug:  * Restarting with stat
+2025-07-06 22:51:34,155 WARNING werkzeug:  * Debugger is active!
+2025-07-06 22:51:34,158 INFO werkzeug:  * Debugger PIN: 103-261-880
+2025-07-06 22:51:58,946 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-07-06 22:51:58,946 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-07-06 22:51:58,947 INFO werkzeug:  * Restarting with stat
+2025-07-06 22:51:59,225 WARNING werkzeug:  * Debugger is active!
+2025-07-06 22:51:59,228 INFO werkzeug:  * Debugger PIN: 103-261-880
+2025-07-06 22:52:35,003 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:52:35] "GET / HTTP/1.1" 200 -
+2025-07-06 22:52:35,083 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:52:35] "GET /static/css/app.css HTTP/1.1" 200 -
+2025-07-06 22:52:35,242 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:52:35] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-07-06 22:52:35,766 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:52:35] "GET /static/pattern.jpg HTTP/1.1" 200 -
+2025-07-06 22:52:36,097 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:52:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 22:52:56,076 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:52:56] "GET / HTTP/1.1" 200 -
+2025-07-06 22:52:56,085 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:52:56] "GET /static/css/app.css HTTP/1.1" 200 -
+2025-07-06 22:52:56,341 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:52:56] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-07-06 22:52:56,407 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:52:56] "[36mGET /static/pattern.jpg HTTP/1.1[0m" 304 -
+2025-07-06 22:53:10,607 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:53:10] "GET / HTTP/1.1" 200 -
+2025-07-06 22:53:10,616 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:53:10] "GET /static/css/app.css HTTP/1.1" 200 -
+2025-07-06 22:53:10,857 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:53:10] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-07-06 22:53:11,038 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:53:11] "GET /static/pattern.jpg HTTP/1.1" 200 -
+2025-07-06 22:53:11,355 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:53:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 22:53:13,729 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:53:13] "[36mGET /static/css/app.css HTTP/1.1[0m" 304 -
+2025-07-06 22:53:14,047 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:53:14] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-06 22:53:30,489 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:53:30] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-06 22:53:49,489 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:53:49] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-06 22:54:21,392 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:21] "GET / HTTP/1.1" 200 -
+2025-07-06 22:54:21,698 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:21] "GET /static/css/app.css HTTP/1.1" 200 -
+2025-07-06 22:54:21,703 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-07-06 22:54:22,009 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:22] "[36mGET /static/pattern.jpg HTTP/1.1[0m" 304 -
+2025-07-06 22:54:24,776 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:24] "GET / HTTP/1.1" 200 -
+2025-07-06 22:54:24,784 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:24] "[36mGET /static/css/app.css HTTP/1.1[0m" 304 -
+2025-07-06 22:54:25,044 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:25] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-07-06 22:54:40,165 INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-07-06 22:54:40,165 INFO werkzeug: [33mPress CTRL+C to quit[0m
+2025-07-06 22:54:40,165 INFO werkzeug:  * Restarting with stat
+2025-07-06 22:54:40,433 WARNING werkzeug:  * Debugger is active!
+2025-07-06 22:54:40,436 INFO werkzeug:  * Debugger PIN: 103-261-880
+2025-07-06 22:54:44,248 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:44] "GET / HTTP/1.1" 200 -
+2025-07-06 22:54:44,317 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:44] "[36mGET /static/css/app.css HTTP/1.1[0m" 304 -
+2025-07-06 22:54:44,495 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:44] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-07-06 22:54:58,123 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:58] "GET / HTTP/1.1" 200 -
+2025-07-06 22:54:58,131 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:58] "GET /static/css/app.css HTTP/1.1" 200 -
+2025-07-06 22:54:58,391 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:58] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-07-06 22:54:58,457 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:54:58] "[36mGET /static/pattern.jpg HTTP/1.1[0m" 304 -
+2025-07-06 22:55:08,774 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:08] "GET / HTTP/1.1" 200 -
+2025-07-06 22:55:08,782 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:08] "GET /static/css/app.css HTTP/1.1" 200 -
+2025-07-06 22:55:09,025 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-07-06 22:55:09,107 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:09] "[36mGET /static/pattern.jpg HTTP/1.1[0m" 304 -
+2025-07-06 22:55:14,274 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:14] "[36mGET /static/css/app.css HTTP/1.1[0m" 304 -
+2025-07-06 22:55:14,288 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:14] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-06 22:55:42,676 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:42] "GET / HTTP/1.1" 200 -
+2025-07-06 22:55:42,686 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:42] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-07-06 22:55:42,942 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:42] "GET /static/css/app.css HTTP/1.1" 200 -
+2025-07-06 22:55:42,991 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:42] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-07-06 22:55:43,256 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:55:43] "[36mGET /static/pattern.jpg HTTP/1.1[0m" 304 -
+2025-07-06 22:57:26,758 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:57:26] "GET /static/css/app.css HTTP/1.1" 200 -
+2025-07-06 22:57:26,800 INFO werkzeug: 127.0.0.1 - - [06/Jul/2025 22:57:26] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -

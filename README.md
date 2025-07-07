@@ -1,3 +1,5 @@
+![QRORK Banner](static/2025-07-06.png)
+
 # QRORK (version 0.1.0)
 
 A QR code generator web app built with Flask.

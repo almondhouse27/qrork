@@ -38,7 +38,6 @@ html, body {
     align-items: center;
     display: flex;
     flex-direction: row;
-    font-size: 24px;
     justify-content: center;
 }
 
@@ -48,6 +47,7 @@ html, body {
 }
 
 .header h1 {
+    font-size: 48px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 }
 
@@ -219,6 +219,9 @@ input:-internal-autofill-selected { /* for Firefox (less reliable) */
         padding: 8px 16px;
         width: 85%;
     }
+    .header h1 {
+        font-size: 40px;
+    }
     form {
         margin: 0 16px;
     }
@@ -234,5 +237,28 @@ input:-internal-autofill-selected { /* for Firefox (less reliable) */
     }
     .footer a {
         margin: 0 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .frame {
+        padding: 4px 8px;
+        width: 90%;
+    }
+    .header h1 {
+        font-size: 36px;
+    }
+    fieldset label,
+    fieldset label span {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .frame {
+        padding: 4px;
+        width: 95%;
+        transform: scale(0.90);
+        transform-origin: top center;
     }
 }
